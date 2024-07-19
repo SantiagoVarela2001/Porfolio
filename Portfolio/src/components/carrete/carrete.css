@@ -1,0 +1,10 @@
+.carousel-indicators {
+    display: none !important; /* Oculta los indicadores numéricos */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+     /* Ajusta la posición vertical según sea necesario */
+    margin-left: 30px !important; /* Reduce el margen izquierdo */
+    margin-right: 30px !important; /* Reduce el margen derecho */
+  }

@@ -1,0 +1,41 @@
+:root {
+    --blanco: rgba(242, 242, 242, 1);
+    --hueso: rgba(191, 191, 191, 1);
+    --gris_claro: rgba(114, 114, 114, 1);
+    --gris_oscuro: rgba(38, 38, 38, 1);
+    --negro: rgba(12, 12, 12, 1);
+    --verde: rgb(43, 233, 187);
+  }
+  
+  .nombreTecnologias{
+  color: var(--verde);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  }
+  
+  .tecnologias-container {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre las tecnologías */
+    margin-top: 20px; /* Ajusta el margen superior si es necesario */
+  }
+  
+  .tecnologia-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .tecnologia-img {
+    width: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 40px; /* Asegúrate de mantener la relación de aspecto */
+    margin-bottom: 5px; /* Espacio entre la imagen y el nombre */
+  }
+  
+  .tecnom{
+    font-size: 10px;
+  }

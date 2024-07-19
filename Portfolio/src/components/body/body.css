@@ -1,0 +1,111 @@
+:root {
+  --blanco: rgba(242, 242, 242, 1);
+  --hueso: rgba(191, 191, 191, 1);
+  --gris_claro: rgba(114, 114, 114, 1);
+  --gris_oscuro: rgba(38, 38, 38, 1);
+  --negro: rgba(12, 12, 12, 1);
+  --verde: rgb(43, 233, 187);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  text-align: center;
+  background-color: var(--gris_oscuro);
+}
+
+.titulo {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.subtitulo {
+  color: var(--verde);
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.presentacion {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.experiencia {
+  margin: 50px 0 40px;
+  font-size: 25px;
+  color: var(--verde) !important;
+}
+
+.tecnologias{
+  margin-top: 50px;
+  font-size: 25px;
+  color: var(--verde) !important;
+
+}
+
+.cartas {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.foto-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.foto {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--verde);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.info-container {
+  text-align: center;
+}
+
+.info-container h1 {
+  margin: 0;
+  color: var(--blanco);
+}
+
+.info-container h3 {
+  margin: 5px 0;
+  color: var(--verde) !important;
+}
+
+.info-container p {
+  color: var(--hueso);
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+@media (max-width: 810px) {
+  .presentacion {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .info-container p {
+    color: var(--hueso);
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .foto-container{
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,57 @@
+.container {
+    max-width: 600px; /* Ajusta este valor para cambiar el tamaño máximo del formulario */
+    margin: 0 auto; /* Centra el contenedor */
+  }
+
+.container h2 {
+    color: var(--verde) !important;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    color: var(--blanco);
+    border: 2px solid var(--hueso);
+  }
+  
+  form .form-label {
+    color: var(--verde);
+  }
+  
+  form .form-control {
+    background-color: var(--gris_oscuro);
+    color: var(--blanco);
+    border: 1px solid var(--hueso);
+  }
+  
+  form .form-control:focus {
+    background-color: var(--gris_oscuro);
+    color: var(--blanco);
+    box-shadow: none;
+    border-color: var(--verde);
+  }
+
+  form .form-control:-webkit-autofill,
+form .form-control:-webkit-autofill:hover,
+form .form-control:-webkit-autofill:focus {
+  background-color: var(--gris_oscuro) !important;
+  color: var(--blanco) !important;
+  box-shadow: 0 0 0px 1000px var(--gris_oscuro) inset;
+  -webkit-text-fill-color: var(--blanco) !important;
+}
+  
+  form .btn-primary {
+    background-color: var(--gris_oscuro);
+    border-color: var(--verde);
+  }
+  
+  form .btn-primary:hover {
+    background-color: var(--verde);
+    border-color: var(--negro);
+  }
+  
+  @media (max-width: 576px) {
+    form {
+      padding: 20px;
+    }
+  }
+  

@@ -1,0 +1,21 @@
+:root {
+  --blanco: rgba(242, 242, 242, 1);
+  --hueso: rgba(191, 191, 191, 1);
+  --gris_claro: rgba(114, 114, 114, 1);
+  --gris_oscuro: rgba(38, 38, 38, 1);
+  --negro: rgba(12, 12, 12, 1);
+  --verde: rgb(43, 233, 187);
+}
+
+
+h1, h2, h3 {
+  color: var(--blanco) !important;
+}
+
+p {
+  color: var(--hueso) !important;
+}
+
+.resaltador {
+  color: var(--verde) !important;
+}

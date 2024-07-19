@@ -1,0 +1,30 @@
+  /* Estilos para los botones del chatbot */
+  .button-container {
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--verde);
+    color: var(--negro);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 5px;
+  }
+  
+  .button-container button:hover {
+    background-color: var(--blanco);
+    color: var(--verde);
+  }
+  
+  .chat-yo {
+    color: var(--verde);
+  }
+  
+  .chat-santi-bot {
+    color: var(--blanco);
+  }
+  

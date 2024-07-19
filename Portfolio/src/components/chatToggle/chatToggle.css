@@ -1,0 +1,55 @@
+/* Estilo del botón de chat */
+.chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .chat-toggle .fa-comment {
+    font-size: 24px;
+  }
+  
+  .chat-toggle .fa-times {
+    font-size: 24px;
+  }
+  
+  /* Estilo del contenedor del chat */
+  .chat-container {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    max-height: 500px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .chat-header {
+    background-color: #444;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .chat-body {
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
