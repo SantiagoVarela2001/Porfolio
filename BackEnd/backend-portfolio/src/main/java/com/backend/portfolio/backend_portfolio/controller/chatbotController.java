@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "https://porfolio-santiago-varela.netlify.app")
 public class chatbotController {
 
-    @CrossOrigin
     @PostMapping("/chatbot")
     public Answer respuesta(@RequestBody question question) {
         String quest = question.getQuestion().toLowerCase();

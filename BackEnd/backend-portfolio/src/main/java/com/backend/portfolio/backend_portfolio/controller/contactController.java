@@ -14,6 +14,7 @@ import com.backend.portfolio.backend_portfolio.services.emailService;
 
 @RestController
 @RequestMapping("/api/contact")
+@CrossOrigin(origins = "https://porfolio-santiago-varela.netlify.app")
 public class contactController {
 
     @Value("${spring.mail.username}")
@@ -22,7 +23,6 @@ public class contactController {
     @Autowired
     private emailService emailService;
 
-    @CrossOrigin
     @PostMapping
     public ResponseEntity<Void> sendContactMail(@RequestBody ContactForm contactForm) {
         String to = "santiago.varela@hotmail.com";
