@@ -60,7 +60,7 @@ const Body = () => {
           text=""
           pathimg="/Gestion_de_Empleados.jpg"
           projectUrl="https://www.linkedin.com/feed/update/urn:li:activity:7212077812642451457/"
-          document=""
+          document="GESTOR_DE_EMPLEADOS_(documentacion).pdf"
           technologies={gestor_de_empleados}
         />
       </div>

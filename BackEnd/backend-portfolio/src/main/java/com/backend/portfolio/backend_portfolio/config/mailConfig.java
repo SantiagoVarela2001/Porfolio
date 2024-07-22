@@ -43,6 +43,7 @@ public class mailConfig {
         props.put("mail.smtp.auth", mailSmtpAuth);
         props.put("mail.smtp.starttls.enable", mailStartTls);
         props.put("mail.debug", "true");
+        props.put("mail.smtp.ssl.trust", "*");
 
         return mailSender;
     }
