@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import "../chatbot/chatbot.css"
 
+const apiBaseURL = import.meta.env.VITE_API;
+
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
 
   const handleQuestion = async (question) => {
     try {
-      const response = await axios.post('http://localhost:8080/api/chatbot', { question });
+      const response = await axios.post(`${apiBaseURL}/api/chatbot`, { question });
       setMessages([...messages, { question, answer: response.data.answer }]);
     } catch (error) {
       console.error('Error:', error);

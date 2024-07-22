@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './form.css';
 
+const apiBaseURL = import.meta.env.VITE_API;
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     nombre: '',
@@ -19,10 +21,10 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoading(true); // Activa el spinner
+    setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:8080/api/contact', formData);
+      const response = await axios.post(`${apiBaseURL}/api/contact`, formData);
       console.log('Form data submitted:', response.data);
       alert('Mensaje enviado con éxito!');
       setFormData({

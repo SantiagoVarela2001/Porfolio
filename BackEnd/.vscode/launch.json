@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BackendPortfolioApplication<backend-portfolio>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.backend.portfolio.backend_portfolio.BackendPortfolioApplication",
+            "env": {
+                "MAIL_PASSWORD": "FcfsSobrinos",
+                "MAIL_USERNAME": "santiago.varela@hotmail.com"
+            },
+            "projectName": "backend-portfolio",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+
+        }
+    ]
+}
