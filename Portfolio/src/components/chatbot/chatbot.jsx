@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import "../chatbot/chatbot.css"
 
-const apiBaseURL = import.meta.env.VITE_API;
+const apiBaseURL = import.meta.url
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
