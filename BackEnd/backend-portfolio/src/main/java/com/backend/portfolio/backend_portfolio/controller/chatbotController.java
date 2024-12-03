@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "https://porfolio-santiago-varela.netlify.app")
+@CrossOrigin(origins = "https://porfolio-santiago-varela.netlify.app/")
 public class chatbotController {
 
     @PostMapping("/chatbot")

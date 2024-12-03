@@ -1,7 +1,6 @@
 package com.backend.portfolio.backend_portfolio.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,17 +13,15 @@ import com.backend.portfolio.backend_portfolio.services.emailService;
 
 @RestController
 @RequestMapping("/api/contact")
-@CrossOrigin(origins = "https://porfolio-santiago-varela.netlify.app")
+@CrossOrigin(origins = "https://porfolio-santiago-varela.netlify.app/")
 public class contactController {
-
-    @Value("${spring.mail.username}")
-    private String mailUsername;
 
     @Autowired
     private emailService emailService;
 
     @PostMapping
     public ResponseEntity<Void> sendContactMail(@RequestBody ContactForm contactForm) {
+        // Email de destino
         String to = "santiago.varela@hotmail.com";
         String subject = "Nuevo mensaje de contacto";
         String text = "Nombre: " + contactForm.getNombre() + "\n" +
@@ -32,15 +29,17 @@ public class contactController {
                 "Email: " + contactForm.getEmail() + "\n" +
                 "Mensaje: " + contactForm.getMensaje();
 
-        emailService.sendSimpleMessage(to, subject, text);
+        // Enviar mensaje de contacto
+        emailService.sendSimpleMessage(to, subject, text, contactForm);
 
+        // Enviar mensaje de confirmación
         String confirmationSubject = "Confirmación de recepción de mensaje";
         String confirmationText = "Hola " + contactForm.getNombre() + ",\n\n" +
-                "¡Qué gusto que te hayas puesto en contacto conmigo! Recibí tu mensaje y en breve me comunicaré contigo.\n\n"
-                +
+                "¡Qué gusto que te hayas puesto en contacto conmigo! Recibí tu mensaje y en breve me comunicaré contigo.\n\n" +
                 "Saludos cordiales,\nSantiago Varela";
-        emailService.sendSimpleMessage(contactForm.getEmail(), confirmationSubject, confirmationText);
+        emailService.sendSimpleMessage(contactForm.getEmail(), confirmationSubject, confirmationText, contactForm);
 
         return ResponseEntity.ok().build();
     }
 }
+
