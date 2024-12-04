@@ -46,7 +46,7 @@
   padding: 10px;
   font-size: 1rem;
   background-color: var(--blanco);
-  color: var(--blanco);
+  color: var(--negro);
   border: 1px solid var(--hueso);
   border-radius: 5px;
 }
