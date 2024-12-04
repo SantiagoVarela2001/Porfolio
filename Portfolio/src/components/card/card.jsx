@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import './card.css';
 
 function CustomCard({ title, text, pathimg, projectUrl, document, technologies }) {
@@ -19,11 +21,23 @@ function CustomCard({ title, text, pathimg, projectUrl, document, technologies }
             ))}
           </div>
           <div className="button-group">
-            <Button variant="outline-light" className="custom-button" href={projectUrl} target="_blank" rel="noopener noreferrer">
-              Ver Proyecto
+            <Button
+              variant="outline-light"
+              className="custom-button"
+              href={projectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faExternalLinkAlt} /> Ver Proyecto
             </Button>
-            <Button variant="outline-light" className="custom-button" href={document} target="_blank" rel="noopener noreferrer">
-              Documentación
+            <Button
+              variant="outline-light"
+              className="custom-button"
+              href={document}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faFilePdf} /> Documentación
             </Button>
           </div>
         </Card.Body>
@@ -33,5 +47,6 @@ function CustomCard({ title, text, pathimg, projectUrl, document, technologies }
 }
 
 export default CustomCard;
+
 
 

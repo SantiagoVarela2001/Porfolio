@@ -21,7 +21,7 @@ const Header = () => {
     <header className={isScrolled ? 'header-scrolled' : ''}>
       <div className="botones">
         <a href='https://www.linkedin.com/in/santiago-valentin-varela/' target="_blank"><button type="submit" className="boton">LinkedIn</button></a>
-        <a href='/Analista_Programador_Santiago_Varela.pdf' target="_blank" download><button type="button" className="boton">Descargar CV</button></a>
+        <a href='' target="_blank" download><button type="button" className="boton">Descargar CV</button></a>
         <a href='https://github.com/SantiagoVarela2001' target="_blank"><button type="submit" className="boton">GitHub</button></a>
       </div>
     </header>

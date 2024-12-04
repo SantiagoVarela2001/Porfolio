@@ -1,10 +1,11 @@
 :root {
   --blanco: rgba(242, 242, 242, 1);
-  --hueso: rgba(191, 191, 191, 1);
-  --gris_claro: rgba(114, 114, 114, 1);
-  --gris_oscuro: rgba(38, 38, 38, 1);
+  --hueso: #F1FAEE;
   --negro: rgba(12, 12, 12, 1);
-  --verde: rgb(43, 233, 187);
+  --rojo: #E63946;
+  --celeste: #A8DADC;
+  --azul: #457B9D;
+  --azul_oscuro: #1D3557;
 }
 
 
@@ -13,9 +14,9 @@ h1, h2, h3 {
 }
 
 p {
-  color: var(--hueso) !important;
+  color: var(--blanco) !important;
 }
 
 .resaltador {
-  color: var(--verde) !important;
+  color: var(--celeste) !important;
 }

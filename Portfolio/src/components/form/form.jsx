@@ -42,10 +42,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mt-5">
-      <h2 className="text-center">Formulario de Contacto</h2>
-      <form onSubmit={handleSubmit} className="p-4 rounded">
-        <div className="mb-3">
+    <div className="form-container">
+      <h2 className="form-heading">Formulario de Contacto</h2>
+      <form onSubmit={handleSubmit} className="form-content">
+        <div className="form-group">
           <label htmlFor="nombre" className="form-label">Nombre Completo</label>
           <input 
             type="text" 
@@ -57,7 +57,7 @@ const ContactForm = () => {
             required 
           />
         </div>
-        <div className="mb-3">
+        <div className="form-group">
           <label htmlFor="empresa" className="form-label">Nombre de la Empresa / Negocio</label>
           <input 
             type="text" 
@@ -69,7 +69,7 @@ const ContactForm = () => {
             required 
           />
         </div>
-        <div className="mb-3">
+        <div className="form-group">
           <label htmlFor="email" className="form-label">Email</label>
           <input 
             type="email" 
@@ -81,7 +81,7 @@ const ContactForm = () => {
             required 
           />
         </div>
-        <div className="mb-3">
+        <div className="form-group">
           <label htmlFor="mensaje" className="form-label">Mensaje</label>
           <textarea 
             className="form-control" 
@@ -93,7 +93,7 @@ const ContactForm = () => {
             required 
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary w-100" disabled={isLoading}>
+        <button type="submit" className="submit-btn" disabled={isLoading}>
           {isLoading ? <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> : null}
           {isLoading ? 'Enviando...' : 'Enviar'}
         </button>

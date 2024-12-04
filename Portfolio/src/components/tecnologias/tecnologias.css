@@ -1,41 +1,82 @@
 :root {
-    --blanco: rgba(242, 242, 242, 1);
-    --hueso: rgba(191, 191, 191, 1);
-    --gris_claro: rgba(114, 114, 114, 1);
-    --gris_oscuro: rgba(38, 38, 38, 1);
-    --negro: rgba(12, 12, 12, 1);
-    --verde: rgb(43, 233, 187);
-  }
-  
-  .nombreTecnologias{
-  color: var(--verde);
+  --blanco: rgba(242, 242, 242, 1);
+  --hueso: #F1FAEE;
+  --negro: rgba(12, 12, 12, 1);
+  --rojo: #E63946;
+  --celeste: #A8DADC;
+  --azul: #457B9D;
+  --azul_oscuro: #1D3557;
+  --padding: 15px;
+  --border-radius: 8px;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.tecnologias {
+  margin-bottom: 40px; /* Agrega espacio al final de la sección */
+}
+
+.nombreTecnologias {
+  color: var(--celeste);
+  font-size: 1.2rem; /* Tamaño de fuente mayor para mayor visibilidad */
   padding-top: 30px;
   padding-bottom: 20px;
-  }
-  
+  text-align: center; /* Centra el título */
+}
+
+.tecnologias-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px; /* Espacio entre los ítems */
+  margin-top: 20px;
+}
+
+.tecnologia-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tecnologia-item:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al hacer hover */
+}
+
+.tecnologia-img {
+  width: 50px; /* Tamaño de imagen ajustado */
+  height: 50px; /* Mantiene la proporción de la imagen */
+  margin-bottom: 10px; /* Espaciado entre la imagen y el nombre */
+  object-fit: contain; /* Para mantener la imagen sin distorsión */
+}
+
+.tecnom {
+  font-size: 12px; /* Aumento del tamaño de la fuente */
+  font-weight: 500;
+  color: var(--celeste) !important;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
   .tecnologias-container {
-    display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    flex-wrap: wrap;
-    gap: 10px; /* Espacio entre las tecnologías */
-    margin-top: 20px; /* Ajusta el margen superior si es necesario */
+    gap: 10px; /* Ajusta el espacio entre los ítems para pantallas pequeñas */
   }
-  
+
   .tecnologia-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra los elementos verticalmente */
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px;
   }
-  
+
   .tecnologia-img {
-    width: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: 40px; /* Asegúrate de mantener la relación de aspecto */
-    margin-bottom: 5px; /* Espacio entre la imagen y el nombre */
+    width: 40px; /* Tamaño de imagen ajustado para pantallas pequeñas */
+    height: 40px;
   }
-  
-  .tecnom{
-    font-size: 10px;
+
+  .tecnom {
+    font-size: 10px; /* Ajusta el tamaño de fuente en dispositivos pequeños */
   }
+}

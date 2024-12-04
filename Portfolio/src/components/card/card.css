@@ -1,53 +1,59 @@
-:root {
-  --blanco: rgba(242, 242, 242, 1);
-  --hueso: rgba(191, 191, 191, 1);
-  --gris_claro: rgba(114, 114, 114, 1);
-  --gris_oscuro: rgba(38, 38, 38, 1);
-  --negro: rgba(12, 12, 12, 1);
-  --verde: rgb(43, 233, 187);
-}
-
 .carta {
   border: 2px solid var(--hueso);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
-  transition: transform 0.2s;
+  transition: transform 0.3s, box-shadow 0.3s;
   flex: 1;
   max-width: 350px;
+  animation: fadeIn 0.6s ease-in-out;
 }
 
 .carta:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px 6px rgba(var(--verde), 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card-link {
-  text-decoration: none;
-  color: var(--blanco);
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-image-container {
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .custom-card-img {
   max-height: 150px;
   object-fit: cover;
   width: 100%;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+  transition: transform 0.4s ease;
+}
+
+.custom-card-img:hover {
+  transform: scale(1.1);
 }
 
 .card-body {
   padding: 16px;
-  background-color: var(--gris_oscuro);
+  background-color: var(--negro);
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
-  text-align: left;
+  text-align: center;
 }
 
 .card-title {
   margin-bottom: 12px;
   font-weight: 600;
-  color: var(--blanco) !important;
-  text-align: center;
+  color: var(--blanco);
 }
 
 .card-text {
@@ -58,23 +64,28 @@
 
 .button-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 16px;
 }
 
 .custom-button {
   flex: 1;
-  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-size: 14px;
   color: var(--blanco);
-  border: 1px solid var(--verde) !important;
-  background: transparent;
+  background: var(--azul);
+  transition: background 0.3s, transform 0.2s;
 }
 
 .custom-button:hover {
-  background: var(--blanco);
-  color: var(--gris_oscuro);
+  background: var(--azul_oscuro);
+  transform: scale(1.05);
 }
 
 .tech-images {
@@ -88,22 +99,9 @@
 .tech-icon {
   width: 30px;
   height: 30px;
+  transition: transform 0.3s;
 }
 
-@media (max-width: 768px) {
-  .custom-card {
-    width: 100%;
-  }
-
-  .custom-button {
-    font-size: 12px;
-    padding: 8px 16px;
-  }
-}
-
-.cartas {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+.tech-icon:hover {
+  transform: scale(1.2);
 }

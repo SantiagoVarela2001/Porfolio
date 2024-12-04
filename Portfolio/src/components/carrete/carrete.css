@@ -1,10 +1,73 @@
-.carousel-indicators {
-    display: none !important; /* Oculta los indicadores numéricos */
+:root {
+  --blanco: rgba(242, 242, 242, 1);
+  --hueso: #F1FAEE;
+  --negro: rgba(12, 12, 12, 1);
+  --rojo: #E63946;
+  --celeste: #A8DADC;
+  --azul: #457B9D;
+  --azul_oscuro: #1D3557;
+}
+
+.experiencia{
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  color: var(--azul_oscuro);
+  animation: fadeIn 1s ease-out;
+}
+.carrete-container {
+  background: linear-gradient(-45deg, var(--negro), var(--azul_oscuro), var(--negro));
+  background-size: 100% 100%; /* Ajustar el tamaño del fondo */
+  animation: gradientBG 20s ease infinite;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 0%;
   }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-     /* Ajusta la posición vertical según sea necesario */
-    margin-left: 30px !important; /* Reduce el margen izquierdo */
-    margin-right: 30px !important; /* Reduce el margen derecho */
+  50% {
+    background-position: 100% 100%;
   }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.carousel-item {
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  border-radius: 10px; /* Bordes redondeados de cada item */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: var(--azul) !important;
+  font-size: 2rem;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: var(--azul_oscuro) !important; /* Azul oscuro en hover */
+}
+
+.carousel-indicators li {
+  background-color: var(--azul_oscuro); /* Azul oscuro */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: var(--rojo); /* Indicador activo en rojo */
+}
+
+.carousel-caption {
+  text-align: center;
+  color: var(--negro); /* Texto negro */
+  font-size: 1.2rem;
+  font-weight: bold;
+}
