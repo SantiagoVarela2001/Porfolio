@@ -35,13 +35,12 @@ const Body = () => {
             <h1 className="titulo">Santiago Varela</h1>
             <h3 className="subtitulo">Analista de Sistemas</h3>
             <p className="presentacion">
-              Hola, soy <span className="resaltador">Analista de Sistemas</span> y actualmente estoy
-              cursando mis últimas dos materias para recibirme como <span className="resaltador">analista de sistemas</span>.
-              Soy una persona <span className="resaltador">comprometida</span> y <span className="resaltador">emprendedora</span>.
+              Hola, mi nombre es Santiago Varela y soy <span className="resaltador">Analista de Sistemas</span>.
+              Me considero una persona <span className="resaltador">comprometida</span> y <span className="resaltador">emprendedora</span>.
               Mi objetivo es convertirme en un <span className="resaltador">nómada digital</span>, explorando diferentes lugares
               mientras trabajo en lo que me apasiona desde cualquier parte del mundo, rodeado de naturaleza.
               Me gusta <span className="resaltador">aportar valor</span> a los equipos con los que trabajo, intercambiar ideas y
-              <span className="resaltador">aprender de los demás</span>, ya que creo que es la clave para crecer profesionalmente y personalmente.
+              <span className="resaltador"> aprender de los demás</span>, ya que creo que es la clave para crecer profesionalmente y personalmente.
               ¡Espero que mi porfolio sea de su agrado! :)
             </p>
 
