@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Chatbot from '../chatbot/chatbot';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import "../chatToggle/chatToggle.css";
+import "../chatToggle/chatToggle.css"
 
 const ChatToggle = () => {
   const [isChatVisible, setIsChatVisible] = useState(false);
@@ -28,5 +28,6 @@ const ChatToggle = () => {
 };
 
 export default ChatToggle;
+
 
 

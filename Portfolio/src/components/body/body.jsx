@@ -52,9 +52,12 @@ const Body = () => {
               >
                 <FontAwesomeIcon icon={faEnvelope} /> Contáctame
               </button>
-              <button className="btn-cv" href='/Analista_de_Sistemas_Santiago_Varela_cv.pdf' download>
-                <FontAwesomeIcon icon={faDownload} /> Descargar CV
+              <button className="btn-cv">
+                <a href='/Analista_de_Sistemas_Santiago_Varela_cv.pdf' download >
+                  <FontAwesomeIcon icon={faDownload} /> Descargar CV
+                </a>
               </button>
+
 
               <div className="social-icons">
                 <a href="https://github.com/SantiagoVarela2001" target="_blank" rel="noopener noreferrer">

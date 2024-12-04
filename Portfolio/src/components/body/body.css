@@ -138,6 +138,11 @@
   gap: 10px; /* Espacio entre los botones */
 }
 
+.btn-cv a {
+  text-decoration: none;
+  color: inherit; /* Esto asegura que el color del texto sea el mismo que el del botón */
+}
+
 .social-icons {
   display: flex;
   gap: 15px; /* Espacio entre los íconos */
