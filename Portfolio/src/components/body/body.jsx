@@ -75,9 +75,11 @@ const Body = () => {
 
           </div>
         </div>
+      </div>
 
-        <div className="gradient-divider"></div>
+      <div className="gradient-divider"></div>
 
+      <div className='body-trajetas'>
         <h3 className="subtitulo experiencia">
           <FontAwesomeIcon icon={faBriefcase} /> EXPERIENCIA
         </h3>
@@ -102,10 +104,15 @@ const Body = () => {
           />
         </div>
       </div>
+
       <Carrete />
+
       <div className="gradient-divider"></div>
 
-      <Form />
+      <div className='body-formulario'>
+        <Form />
+      </div>
+
       <ChatToggle />
     </>
   );

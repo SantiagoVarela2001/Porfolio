@@ -163,6 +163,30 @@
 .titulo, .subtitulo {
   animation: fadeIn 1s ease-out;
 }
+  
+  .body-trajetas {
+    background: linear-gradient(-45deg, var(--blanco), var(--hueso), var(--blanco));
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+.body-formulario{
+  background: linear-gradient(-45deg, var(--blanco), var(--hueso), var(--blanco));
+  background-size: 400% 400%;
+  animation: gradientBG 20s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 .subtitulo.experiencia {
   align-items: center;
@@ -201,7 +225,7 @@
 }
 
 .gradient-divider {
-  height: 20px; /* Altura del degradado */
+  height: 30px; /* Altura del degradado */
   background: linear-gradient(to bottom, var(--azul_oscuro) 1%, var(--azul) 20%, var(--blanco) 80%);
   margin: 0;
   }

@@ -12,8 +12,7 @@
 .form-container {
   max-width: 600px;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 35px;
+
   background: linear-gradient(-45deg, var(--negro), var(--azul_oscuro), var(--negro));
   background-size: 400% 400%;
   animation: gradientBG 20s ease infinite;
